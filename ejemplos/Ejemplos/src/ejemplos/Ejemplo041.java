@@ -5,6 +5,8 @@
  */
 package ejemplos;
 
+import java.util.Scanner;
+
 /**
  *
  * @author reroes
@@ -12,17 +14,19 @@ package ejemplos;
 public class Ejemplo041 {
 
     public static void main(String[] args) {
-        // 
-        obtenerMultiplicacion(primerValor, segundoValor); 
-        
+        Scanner entrada = new Scanner(System.in);
+        System.out.println("Escriba el primer valor:");
+        int primerValor = entrada.nextInt();
+        System.out.println("Escriba el segundo valor:");
+        int segundoValor = entrada.nextInt();
+        obtenerMultiplicacion(primerValor, segundoValor);
     }
-        
-    public static void obtenerSuma(int a, int b){
-        int suma;
-        suma = a + b;
-        System.out.printf("El valor de la suma es: %d\n", suma);
-        
+
+    public static void obtenerMultiplicacion(int a, int b) {
+        int multiplicacion;
+        multiplicacion = a * b;
+        System.out.printf("El valor de la suma es: %d\n", multiplicacion);
+
     }
-    
-    
+
 }
